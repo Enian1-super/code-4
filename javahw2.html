@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+    <script>
+        function add(a,b) {
+            return a + b;
+        };
+        function avarage(a,b) {
+            return add(a,b) / 2;
+        };
+
+        document.getElementById("demo").innerHTML = "The avarage of 4 and 6 is " + avarage(4,6);
+
+        var shoes = ["Nike", "Adidas", "Puma", "Rebook"];
+        document.getElementById("demo2").innerHTML = "My favourite shoe brand is " + shoes[1];
+
+        var sports = ["Tennis", "Football", "Baseball", "Basketball", "Cricket"]
+        document.getElementById("demo3").innerHTML = sports.join();
+        document.getElementById("demo4").innerHTML = sports;
+        sports.pop();
+        document.getElementById("demo5").innerHTML = sports;
+
+
+    </script>
+</body>
+</html>
